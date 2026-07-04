@@ -34,6 +34,7 @@ publish/
 appsettings.Development.json
 appsettings.*.Local.json
 secrets.json
+appsettings.json
 
 # OS files
 .DS_Store
