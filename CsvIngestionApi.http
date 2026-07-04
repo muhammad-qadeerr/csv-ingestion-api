@@ -1,0 +1,21 @@
+@CsvIngestionApi_HostAddress = https://localhost:7211
+
+### Health check (anonymous - no token needed)
+GET {{CsvIngestionApi_HostAddress}}/api/ping
+Accept: application/json
+
+### Upload a CSV file to blob storage (multipart/form-data)
+POST {{CsvIngestionApi_HostAddress}}/api/csv/upload
+Content-Type: multipart/form-data; boundary=----CsvBoundary
+
+------CsvBoundary
+Content-Disposition: form-data; name="file"; filename="sample.csv"
+Content-Type: text/csv
+
+id,name,value
+1,alpha,100
+2,beta,200
+3,gamma,300
+------CsvBoundary--
+
+###

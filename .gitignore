@@ -1,0 +1,40 @@
+# Build results
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Publish & deployment artifacts
+publish/
+*.zip
+
+# Backup & temp files
+*.tmp
+*.bak
+*.Backup*.tmp
+
+# Local secrets / environment overrides (contain real credentials)
+appsettings.Development.json
+appsettings.*.Local.json
+secrets.json
+
+# OS files
+.DS_Store
+Thumbs.db
